@@ -1,26 +1,21 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float rotateSpeed = 120f;
     public float jumpForce = 12f;
-
     Rigidbody rb;
     bool isGrounded;
-
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-
     void Update()
     {
         Rotate();
         Jump();
     }
-
     void FixedUpdate()
     {
         Move();

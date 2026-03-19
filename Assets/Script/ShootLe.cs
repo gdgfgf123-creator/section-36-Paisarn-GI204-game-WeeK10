@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class ShootLe : MonoBehaviour
 {
     [SerializeField] private Transform shootPos;
